@@ -1,0 +1,13 @@
+diff -Naur A/plat/imx/imx8qm/platform.mk B/plat/imx/imx8qm/platform.mk
+--- A/plat/imx/imx8qm/platform.mk	2020-09-02 11:47:43.581297993 +0530
++++ B/plat/imx/imx8qm/platform.mk	2020-11-10 11:08:35.644792819 +0530
+@@ -49,7 +49,8 @@
+ ENABLE_L2_DYNAMIC_RETENTION := 1
+ $(eval $(call add_define,ENABLE_L2_DYNAMIC_RETENTION))
+ 
+-BL32_BASE		?=	0xfe000000
++#IWG27M: OPTEE: Change the BL32 base address to support 4GB LPDDR4
++BL32_BASE		?=	0xbe000000
+ $(eval $(call add_define,BL32_BASE))
+ 
+ BL32_SIZE		?=	0x2000000
