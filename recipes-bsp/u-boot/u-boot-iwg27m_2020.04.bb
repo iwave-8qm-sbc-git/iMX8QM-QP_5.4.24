@@ -13,11 +13,11 @@ DEPENDS_append = " dtc-native"
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://Licenses/gpl-2.0.txt;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
-UBOOT_SRC ?= "git://github.com/iwavegit/u-boot-iwg27m.git;protocol=https"
-SRCBRANCH = "iwg27m-r4.0-rel1.0"
+UBOOT_SRC ?= "git://github.com/iwave-8qm-sbc-git/u-boot-iwg27m.git;protocol=https"
+SRCBRANCH = "IMX8QM/QP-R4.0-REL1.0"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH} \
 	${@bb.utils.contains('MACHINE_FEATURES', 'optee', 'file://PATCH001-iW-PRFHZ-SC-01-R4.0-REL1.0-Linux5.4.24_Uboot_4GB_LPDDR4_Optee.patch', "", d)}"
-SRCREV = "de39f5f6e9299e062a0175eba3a8d206a389dbb2"
+SRCREV = "e19de9e1b0c14bcc0d6e8439a05f0c2b2e441187"
 
 S = "${WORKDIR}/git"
 

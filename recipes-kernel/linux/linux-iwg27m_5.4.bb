@@ -13,10 +13,10 @@ DEPENDS += "lzop-native bc-native"
 
 KERNEL_BRANCH ?= "iwg27m-r4.0-rel1.0"
 LOCALVERSION = "-2.1.0"
-KERNEL_SRC ?= "git://github.com/iwavegit/linux-iwg27m.git;protocol=https"
+KERNEL_SRC ?= "git://github.com/iwave-8qm-sbc-git/kernel.git;protocol=https"
 SRC_URI = "${KERNEL_SRC};branch=${KERNEL_BRANCH}"
 
-SRCREV = "198698ec400fce7ef1609670a20f48470a029ec1"
+SRCREV = "e5be58c570fa1b9e7bd398524d36fa73bf150010"
 
 FILES_${KERNEL_PACKAGE_NAME}-base += "${nonarch_base_libdir}/modules/${KERNEL_VERSION}/modules.builtin.modinfo "
 
