@@ -183,7 +183,7 @@ echo "BBLAYERS += \"\${BSPDIR}/sources/meta-openembedded/meta-filesystems\"" >> 
 
 echo "BBLAYERS += \"\${BSPDIR}/sources/meta-qt5\"" >> $BUILD_DIR/conf/bblayers.conf
 echo "BBLAYERS += \"\${BSPDIR}/sources/meta-python2\"" >> $BUILD_DIR/conf/bblayers.conf
-echo "BBLAYERS += \"\${BSPDIR}/sources/meta-iwave\"" >> $BUILD_DIR/conf/bblayers.conf
+echo "BBLAYERS += \"\${BSPDIR}/sources/iMX8QM-QP_5.4.24\"" >> $BUILD_DIR/conf/bblayers.conf
 
 if [ -d ../sources/meta-ivi ]; then
     echo -e "\n## Genivi layers" >> $BUILD_DIR/conf/bblayers.conf
